@@ -1,0 +1,77 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'myfirst.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <nav class="bg-blue-50 p-5 shadow md:flex md:items-center md:justify-between">
+        <div>
+            <span class="text-blue-800 font-bold text-3xl ">
+                EIGHT<span class="text-red-600">TAB</span>
+            </span>
+        </div>
+        <div class="flex space-x-4">
+            <a href="#solutions" class="text-gray-600 hover:text-gray-800">SOLUTION</a>
+            <a href="#company" class="text-gray-600 hover:text-gray-800">COMPANY</a>
+            <a href="#product" class="text-gray-600 hover:text-gray-800">PRODUCTS</a>
+            <a href="#faq" class="text-gray-600 hover:text-gray-800">FAQ</a>
+            <a href="{% url 'welcome' %}" class="text-gray-600 hover:text-gray-800">CONTACT US</a>
+            <a href="{% url 'submit'%}" class="text-white bg-blue-800 px-3 py-1 rounded-md hover:bg-blue-600">SIGN UP</a>
+        </div>
+    </nav>
+    <div class="bg-gradient-to-b from-teal-200 to-red-100 flex flex-wrap px-3">
+        <div class="">
+            <h1 class="text-3xl text-blue-950 font-bold mx-12 mt-8 p-2 ">Identity verification at <br>the speed of light</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ut <br>magnam a libero ipsum eveniet
+                veritatis vitae earum neque,
+                debitis cupiditate <br>illo rerum, porro quae dolor nisi velit id soluta?</p>
+                <button class="bg-blue-800 p-2 rounded-full m-8 text-white">More details</button>
+                <button class="bg-red-600 p-2 rounded-full text-white ">More details</button>
+        </div>
+        <div class="">
+           <img src="{% static '' %}" alt="" class="w-200 h-64 m-12">
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="text-center">
+           <h1 class="mt-2 font-bold p-4 text-xl">OUR PRODUCTS</h1>
+        </div>
+        <div class="flex flex-wrap mx-12">
+            <div class=" w-64 h-64">
+                <img src="computer.png" alt="" class="w-12 h-12 ml-16">
+      <h1 class="text-center text-lg font-bold mr-16">ID OCR</h1>
+      <P class="ml-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+           Voluptatum sequi eveniet fuga placeat illo, quis enim impedit cupiditate temporibus quo
+          </P>
+              </div>
+              <div class=" w-64 h-64">
+                <img src="computer.png" alt="" class="w-12 h-12 ml-16">
+      <h1 class="text-center text-lg font-bold mr-16">ID OCR</h1>
+      <P class="ml-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+           Voluptatum sequi eveniet fuga placeat illo, quis enim impedit cupiditate temporibus quo
+          </P>
+              </div>
+              <div class=" w-64 h-64">
+                <img src="computer.png" alt="" class="w-12 h-12 ml-16">
+      <h1 class="text-center text-lg font-bold mr-16">ID OCR</h1>
+      <P class="ml-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+           Voluptatum sequi eveniet fuga placeat illo, quis enim impedit cupiditate temporibus quo
+          </P>
+              </div>
+              <div class=" w-64 h-64">
+                <img src="computer.png" alt="" class="w-12 h-12 ml-16">
+      <h1 class="text-center text-lg font-bold mr-16">ID OCR</h1>
+      <P class="ml-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+           Voluptatum sequi eveniet fuga placeat illo, quis enim impedit cupiditate temporibus quo
+          </P>
+              </div>
+        </div>
+    
+    </div>
+   
+</body>
+</html>
