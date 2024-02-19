@@ -22,4 +22,4 @@ def welcome(request):
 def deletetodo(request, id):
     selectedData= SendM.objects.all()
     deleteData=SendM.objects.get(id=id).delete()
-    return render(request,'Welcome.html',{'data':selectedData})
+    return render(request,'Welcome.html',{'data':selectedData}) 
